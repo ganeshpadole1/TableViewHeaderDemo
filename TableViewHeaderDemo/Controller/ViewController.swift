@@ -42,6 +42,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         }
         //let model = viewModel.settings[indexPath.row]
         cell.textLabel?.text = viewModel.sectionData[indexPath.section].item[indexPath.row].title
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 }
