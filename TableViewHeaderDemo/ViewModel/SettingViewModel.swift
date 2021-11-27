@@ -14,7 +14,7 @@ struct SettingViewModel {
             return [
                 SectionData(type: .premium,
                             headerImage: nil,
-                            isSwitchAvailable: false,
+                            isSwitchAvailable: true,
                             item: [
                                 Setting(title: "My Profile", logo: UIImage(named: "home")),
                                 Setting(title: "Notifications", logo: UIImage(named: "home")),

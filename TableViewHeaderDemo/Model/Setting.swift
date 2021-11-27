@@ -12,7 +12,7 @@ typealias Callback = () -> Void
 struct SectionData {
     let type: HeaderType
     let headerImage: UIImage?
-    let isSwitchAvailable: Bool?
+    let isSwitchAvailable: Bool
     let item: [Setting]
     let action: Callback? 
 }
