@@ -14,9 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.tableView.register(UINib(nibName: "SettingsHeaderCell", bundle: nil), forCellReuseIdentifier: "SettingsHeaderCell")
-
+        
+        self.tableView.registerHeaderAndFooter(type: SettingsHeaderCell.self, identifier: "SettingsHeaderCell", bundle: nil)
     }
 }
 
