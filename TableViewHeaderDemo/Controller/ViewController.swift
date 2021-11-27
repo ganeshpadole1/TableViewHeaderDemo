@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.registerHeaderAndFooter(type: SettingsHeaderCell.self, identifier: "SettingsHeaderCell", bundle: nil)
+        self.tableView.register(UINib(nibName: SettingsHeaderCell.identifier, bundle: nil), forCellReuseIdentifier: SettingsHeaderCell.identifier)
+
     }
 }
 

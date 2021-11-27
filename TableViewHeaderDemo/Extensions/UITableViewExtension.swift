@@ -7,6 +7,14 @@
 
 import UIKit
 
+extension NSObject {
+    static var identifier: String {
+        get {
+            "\(self)"
+        }
+    }
+}
+
 extension UITableView {
     
     func registerHeaderAndFooter(type: AnyClass, identifier: String, bundle: Bundle? = nil) {

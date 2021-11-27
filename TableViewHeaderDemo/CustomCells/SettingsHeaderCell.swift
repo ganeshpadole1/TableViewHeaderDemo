@@ -20,9 +20,6 @@ class SettingsHeaderCell: UITableViewCell {
     
     func setupHeader(_ sectionData: SectionData) {
         titleLabel.text = "dddd"
-        //titleLabel.text = "sectionData.type.rawValue"
-        print(sectionData.type.rawValue)
-        
         guard let image = sectionData.headerImage else { return }
         headerImageView.image = image
     }
