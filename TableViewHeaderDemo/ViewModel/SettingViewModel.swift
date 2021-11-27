@@ -16,10 +16,10 @@ struct SettingViewModel {
                             headerImage: nil,
                             isSwitchAvailable: false,
                             item: [
-                                Setting(title: "My Profile", logo: nil),
-                                Setting(title: "Notifications", logo: nil),
-                                Setting(title: "Security", logo: nil),
-                                Setting(title: "Payments", logo: nil)
+                                Setting(title: "My Profile", logo: UIImage(named: "home")),
+                                Setting(title: "Notifications", logo: UIImage(named: "home")),
+                                Setting(title: "Security", logo: UIImage(named: "home")),
+                                Setting(title: "Payments", logo: UIImage(named: "home"))
                             ], action:{
                                 
                             }

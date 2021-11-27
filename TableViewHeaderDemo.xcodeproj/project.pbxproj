@@ -18,6 +18,8 @@
 		1FA5F5B2275150E5000C51CC /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5F5B1275150E5000C51CC /* Setting.swift */; };
 		1FA5F5B427515123000C51CC /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5F5B327515123000C51CC /* SettingViewModel.swift */; };
 		1FD29FDD2752908A0084D860 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD29FDC2752908A0084D860 /* UITableViewExtension.swift */; };
+		1FD29FE02752A3970084D860 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD29FDE2752A3970084D860 /* SettingsCell.swift */; };
+		1FD29FE12752A3970084D860 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD29FDF2752A3970084D860 /* SettingsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		1FA5F5B1275150E5000C51CC /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		1FA5F5B327515123000C51CC /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		1FD29FDC2752908A0084D860 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		1FD29FDE2752A3970084D860 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		1FD29FDF2752A3970084D860 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			children = (
 				1FA5F5AD27514EB2000C51CC /* SettingsHeaderCell.swift */,
 				1FA5F5AE27514EB2000C51CC /* SettingsHeaderCell.xib */,
+				1FD29FDE2752A3970084D860 /* SettingsCell.swift */,
+				1FD29FDF2752A3970084D860 /* SettingsCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -184,6 +190,7 @@
 				1FA5F5B027514EB2000C51CC /* SettingsHeaderCell.xib in Resources */,
 				1FA5F59E27514A4D000C51CC /* Assets.xcassets in Resources */,
 				1FA5F59C27514A4A000C51CC /* Main.storyboard in Resources */,
+				1FD29FE12752A3970084D860 /* SettingsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +207,7 @@
 				1FA5F5AF27514EB2000C51CC /* SettingsHeaderCell.swift in Sources */,
 				1FA5F59527514A4A000C51CC /* AppDelegate.swift in Sources */,
 				1FA5F59727514A4A000C51CC /* SceneDelegate.swift in Sources */,
+				1FD29FE02752A3970084D860 /* SettingsCell.swift in Sources */,
 				1FD29FDD2752908A0084D860 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

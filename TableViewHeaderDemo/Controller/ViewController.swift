@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.register(UINib(nibName: SettingsHeaderCell.identifier, bundle: nil), forCellReuseIdentifier: SettingsHeaderCell.identifier)
+        self.tableView.register(UINib(nibName: SettingsCell.identifier, bundle: nil), forCellReuseIdentifier: SettingsCell.identifier)
 
     }
 }
@@ -33,6 +34,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return 60
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 58
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel.numberOfSection()
     }
@@ -42,12 +47,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingsCell.identifier) as? SettingsCell else {
             fatalError("error during dequing")
         }
     
-        cell.textLabel?.text = viewModel.sectionData[indexPath.section].item[indexPath.row].title
+        let setting = viewModel.sectionData[indexPath.section].item[indexPath.row]
         cell.accessoryType = .disclosureIndicator
+        cell.setup(setting)
         return cell
     }
 }
