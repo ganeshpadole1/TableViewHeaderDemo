@@ -20,7 +20,9 @@ struct SettingViewModel {
                                 Setting(title: "Notifications", logo: nil),
                                 Setting(title: "Security", logo: nil),
                                 Setting(title: "Payments", logo: nil)
-                            ]
+                            ], action:{
+                                
+                            }
                            ),
                 SectionData(type: .inviteFriend,
                             headerImage: nil,
@@ -29,7 +31,9 @@ struct SettingViewModel {
                                 Setting(title: "Blogs", logo: nil),
                                 Setting(title: "Contact us", logo: nil),
                                 Setting(title: "Privacy Policy", logo: nil),
-                            ]
+                            ], action:{
+                                
+                            }
                            )
                 
             ]

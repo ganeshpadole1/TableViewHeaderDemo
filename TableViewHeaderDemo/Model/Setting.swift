@@ -7,11 +7,14 @@
 
 import UIKit
 
+typealias Callback = () -> Void
+
 struct SectionData {
     let type: HeaderType
     let headerImage: UIImage?
     let isSwitchAvailable: Bool?
     let item: [Setting]
+    let action: Callback? 
 }
 
 enum HeaderType: String {
