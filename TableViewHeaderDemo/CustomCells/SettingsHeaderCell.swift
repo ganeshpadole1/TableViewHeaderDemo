@@ -13,10 +13,18 @@ class SettingsHeaderCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    
+        backgroundColor = .red
     }
 
     
-   
+    func setupHeader(_ sectionData: SectionData) {
+        titleLabel.text = "dddd"
+        //titleLabel.text = "sectionData.type.rawValue"
+        print(sectionData.type.rawValue)
+        
+        guard let image = sectionData.headerImage else { return }
+        headerImageView.image = image
+    }
     
 }

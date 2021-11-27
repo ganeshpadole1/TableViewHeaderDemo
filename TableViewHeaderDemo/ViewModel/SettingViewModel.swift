@@ -9,8 +9,6 @@ import UIKit
 
 struct SettingViewModel {
     
-    var settings = [Setting]()
-    
     var sectionData: [SectionData] {
         get {
             return [
@@ -18,38 +16,26 @@ struct SettingViewModel {
                             headerImage: nil,
                             isSwitchAvailable: false,
                             item: [
-                                Setting(title: "Account", logo: nil),
-                                Setting(title: "Payment Methods", logo: nil),
+                                Setting(title: "My Profile", logo: nil),
+                                Setting(title: "Notifications", logo: nil),
                                 Setting(title: "Security", logo: nil),
-                                Setting(title: "Limits", logo: nil)
+                                Setting(title: "Payments", logo: nil)
                             ]
                            ),
                 SectionData(type: .inviteFriend,
                             headerImage: nil,
                             isSwitchAvailable: false,
                             item:[
-                                Setting(title: "Account", logo: nil),
-                                Setting(title: "Payment Methods", logo: nil),
-                                Setting(title: "Security", logo: nil),
-                                Setting(title: "Limits", logo: nil)
+                                Setting(title: "Blogs", logo: nil),
+                                Setting(title: "Contact us", logo: nil),
+                                Setting(title: "Privacy Policy", logo: nil),
                             ]
                            )
                 
             ]
         }
     }
-    
-    
-    //    init () {
-    //        settings.append(Setting(title: "Account", logo: nil))
-    //        settings.append(Setting(title: "Payment Methods", logo: nil))
-    //        settings.append(Setting(title: "Security", logo: nil))
-    //        settings.append(Setting(title: "Limits", logo: nil))
-    //        settings.append(Setting(title: "Notifications", logo: nil))
-    //        settings.append(Setting(title: "Reports", logo: nil))
-    //        settings.append(Setting(title: "Account", logo: nil))
-    //    }
-    
+   
     func numberOfRowsInSection(_ section: Int) -> Int {
         return sectionData[section].item.count
     }
