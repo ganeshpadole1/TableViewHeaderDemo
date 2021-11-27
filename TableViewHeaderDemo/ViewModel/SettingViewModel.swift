@@ -15,6 +15,8 @@ struct SettingViewModel {
         get {
             return [
                 SectionData(type: .premium,
+                            headerImage: nil,
+                            isSwitchAvailable: false,
                             item: [
                                 Setting(title: "Account", logo: nil),
                                 Setting(title: "Payment Methods", logo: nil),
@@ -23,6 +25,8 @@ struct SettingViewModel {
                             ]
                            ),
                 SectionData(type: .inviteFriend,
+                            headerImage: nil,
+                            isSwitchAvailable: false,
                             item:[
                                 Setting(title: "Account", logo: nil),
                                 Setting(title: "Payment Methods", logo: nil),
