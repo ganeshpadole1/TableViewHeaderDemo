@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerCell = tableView.dequeueReusableCell(withIdentifier: "SettingsHeaderCell") as! SettingsHeaderCell
+        let headerCell = tableView.dequeueReusableCell(withIdentifier: SettingsHeaderCell.identifier) as! SettingsHeaderCell
         headerCell.setupHeader(viewModel.sectionData[section])
         return headerCell
     }
