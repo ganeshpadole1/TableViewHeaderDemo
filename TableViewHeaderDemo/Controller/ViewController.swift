@@ -54,4 +54,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.setup(setting)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //https://stackoverflow.com/questions/57081454/making-table-cell-click-events-align-more-with-mvvm
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        viewModel.performAction(indexPath)
+    }
 }

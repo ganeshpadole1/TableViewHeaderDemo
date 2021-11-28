@@ -51,4 +51,21 @@ struct SettingViewModel {
     func titleForHeaderInSection(_ section: Int) -> String {
         return sectionData[section].type.rawValue
     }
+    
+    func performAction(_ indexPath: IndexPath) {
+        switch (indexPath.section, indexPath.row) {
+        case (0, 0):
+            print("My Profile")
+        case (0, 1):
+            print("Notifications")
+        case (0, 2):
+            print("Security")
+        case (0, 3):
+            print("Payment")
+        case (1, 0):
+            print("Blogs")
+        case (_, _):
+            print("default")
+        }
+    }
 }
